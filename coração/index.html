@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: #76267A;
+}
+
+.heart {
+  --pixel-size: 50px;
+  display: grid;
+  grid-template-columns: repeat(7, var(--pixel-size));
+  grid-template-rows: repeat(6, var(--pixel-size));
+  animation: pulse 1s infinite alternate ease-in-out;
+}
+
+@keyframes pulse {
+  0% { transform: scale(.8) }
+  100% { transform: scale(1) }
+}
+
+@media(max-width: 350px) {
+  .heart {
+    --pixel-size: 25px;
+  }
+}
+
+@media(max-width: 175px) {
+  .heart {
+    --pixel-size: 12.5px;
+  }
+}
+
+.heart__pixel {
+  background-color: var(--pixel-color, transparent);
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <div class="heart">
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel" style="--pixel-color: #76267A"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel" style="--pixel-color: #fff"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+        <div class="heart__pixel"></div>
+      </div>
+    
+
+</body>
+</html>
+
